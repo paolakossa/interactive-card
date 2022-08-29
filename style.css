@@ -1,0 +1,91 @@
+:root{
+	--violeta-degradê: linear-gradient (249 99% 64%, 278 94% 30%);
+	--vermelho: hsl(0, 100%, 66%);
+	--branco: hsl(0, 0%, 100%);
+	--violeta-acinzentado-claro: hsl(270, 3%, 87%);
+	--violeta-acinzentado-escuro: hsl(279, 6%, 55%);
+	--violeta-muito-escuro:  hsl(278, 68%, 11%);
+	--fonte-principal: 'Space Grotesk';
+}
+
+body{
+	
+	font-size: 18px;
+	font-family: var(--fonte-principal);
+	font-weight: 500;
+
+}
+
+section.card{
+	height: 60vh;
+}
+
+.card__back{
+	top: -13rem;
+	left: 3.5rem;
+	position: relative;
+}
+.card__back--img{
+	width: 80%;
+	
+}
+.card__back--texto{
+	top: -18.75rem;
+	left: 18.75rem;
+	position: relative;
+
+}
+
+.card__back--texto--p{
+	
+	font-size: 10px;
+	color: var(--branco);
+}
+
+.card__front{
+	top: -18.3rem;
+	left: 1rem;
+	position: relative;
+}
+
+.card__front--img{
+	width: 80%;
+	
+}
+
+.card__front--logo{
+	top: -28rem;
+	left: 2rem;
+	position: relative;
+}
+
+.card__front--logo--logo{
+	width: 15%;
+}
+
+.card__front--numero{
+	top: -25rem;
+	left: 2rem;
+	position: relative;
+}
+
+.card__front--numero--num{
+	color: var(--branco);
+	letter-spacing: .1rem;
+}
+
+.card__front--texto{
+	display: flex;
+	top: -24rem;
+	left: 2rem;
+	position: relative;
+	justify-content: space-between;
+	width: 65%;
+}
+
+.card__front--nome,
+.card__front--validade {
+	font-size: 10px;
+	color: var(--branco);
+	text-transform: uppercase;
+}
