@@ -86,13 +86,21 @@ section.card{
 	position: relative;
 	justify-content: space-between;
 	width: 65%;
+
 }
 
 .card__front--nome,
-.card__front--validade {
+.card__front--validade-mes,
+.card__front--validade-ano,
+.card__front--validade-barra {
 	font-size: 10px;
 	color: var(--branco);
 	text-transform: uppercase;
+
+}
+
+.card__front--validade-mes{
+	margin-left: 8rem;
 }
 
 .label__padrao{
@@ -223,4 +231,16 @@ section.card{
 
 section.mensagem__obrigado{
 	overflow-x: hidden;
+}
+
+.mensagem__erro{
+	font-size: 10px;
+	color: var(--vermelho);
+	display: none;
+}
+
+.mensagem__branco {
+	font-size: 10px;
+	color: var(--vermelho);
+	display: none;
 }
