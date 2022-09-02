@@ -1,3 +1,5 @@
+//Manipulação dos dados do cartão
+
 function trocaNome(){
 	let nome = document.querySelector('#nomesobrenome').value; 
 	document.querySelector('#card__front--nome').innerText = nome;
@@ -30,17 +32,21 @@ function trocaCVC() {
 	
 };
 
+// Mostrar a tela de obrigado 
 
 function enviar() {
 	document.querySelector('.mensagem__obrigado').style.display = 'block';
 
-	
 };
+
+//Prevenir refresh automático do envio do formulário
 
 const form = document.querySelector('.form')
 form.addEventListener('submit', e => {
     e.preventDefault();
 });
+
+//Realizar o refresh da página com o botão "continue"
 
 const btn = document.querySelector('.mensagem__obrigado-button');
 btn.addEventListener("click", function() {

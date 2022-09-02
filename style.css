@@ -1,5 +1,5 @@
 :root{
-	--violeta-degradê: linear-gradient (249 99% 64%, 278 94% 30%);
+	--violeta-degrade: linear-gradient (249 99% 64%, 278 94% 30%);
 	--vermelho: hsl(0, 100%, 66%);
 	--branco: hsl(0, 0%, 100%);
 	--violeta-acinzentado-claro: hsl(270, 3%, 87%);
@@ -20,8 +20,6 @@ body{
 }
 
 section.card{
-	height: 60vh;
-	width: 100vw;
 	overflow-x: hidden;
 }
 
@@ -128,7 +126,7 @@ section.card{
 }
 
 .input__padrao:hover{
-	border-color: var(--violeta-degradê);
+	border: 1px solid var(--violeta-acinzentado-escuro);
 	cursor: pointer;
 }
 
@@ -143,7 +141,7 @@ section.card{
 }
 
 .input__padrao-data:hover{
-	border-color: var(--violeta-degradê);
+	border: 1px solid var(--violeta-acinzentado-escuro);
 	cursor: pointer;
 }
 
@@ -158,7 +156,7 @@ section.card{
 }
 
 .input__padrao-cvc:hover{
-	border-color: var(--violeta-degradê);
+	border: 1px solid var(--violeta-acinzentado-escuro);
 	cursor: pointer;
 }
 
@@ -180,7 +178,7 @@ section.card{
 .mensagem__obrigado{
 	display: none;
 	position: fixed;
-	top:40%;
+	top:30%;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -244,3 +242,443 @@ section.mensagem__obrigado{
 	color: var(--vermelho);
 	display: none;
 }
+
+.form{
+	margin-top: -20rem;
+}
+
+@media screen and (min-width: 1200px){
+
+	section.card{
+	overflow: hidden;
+	height: 100vh;
+}
+
+body{
+	background: url("images/bg-main-desktop.png");
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+
+}
+
+.card__mobile{
+	display: none;
+}
+
+.container-card__back{
+	position: relative;
+}
+.card__back{
+	top: 20rem;
+	left: 20rem;
+	position: absolute;
+}
+.card__back--img{
+	width: 70%;
+	
+}
+.card__back--texto{
+	top: 25rem;
+	left:36rem;
+	position: absolute;
+
+} 
+
+.container-card__front{
+	position: relative;
+}
+.card__front{
+	top: 8rem;
+	left: 16rem;
+	position: absolute;
+}
+
+.card__front--img{
+	width: 70%;
+	
+}
+
+.card__front--logo{
+	left: 17rem;
+	top: 9rem;
+	position: absolute;
+}
+
+.card__front--logo--logo{
+
+	width: 80%;
+}
+
+.card__front--numero{
+	top: 15rem;
+	left: 18rem;
+	position: absolute;
+}
+
+.card__front--numero--num{
+	color: var(--branco);
+	letter-spacing: .1rem;
+	font-size: 16px;
+}
+
+.card__front--texto{
+	display: flex;
+	top: 17rem;
+	left: 14rem;
+	position: absolute;
+	justify-content: space-around;
+	width: 25%;
+
+}
+
+.card__front--nome{
+	margin-left: 3rem;
+}
+
+.card__front--nome,
+.card__front--validade-mes,
+.card__front--validade-ano,
+.card__front--validade-barra {
+	font-size: 10px;
+	color: var(--branco);
+	text-transform: uppercase;
+
+}
+
+.card__front--nome{
+	margin-left: 3rem;
+}
+.card__front--validade-mes{
+	margin-right:1rem;	
+}
+
+.card__front--validade-ano{
+	margin-left: 1rem;
+}
+
+.form{
+float: right;
+margin-top: -30rem;
+margin-left: 50rem;
+
+}
+
+..mensagem__obrigado{
+	display: none;
+	position:fixed;
+	top:50%;
+	height: 100%;
+	background-color: var(--branco);
+	width: 50%;
+	
+
+}
+
+.enviar{
+	margin: 2rem .5rem;
+	width: 60%;
+	background-color: var(--violeta-muito-escuro);
+	color: var(--branco);
+	padding: 1rem;
+	border-radius: 10px;
+	border: none;
+	font-size: 18px;
+}
+
+.enviar:hover{
+	cursor: pointer;
+}
+
+.mensagem__obrigado-button{
+	margin: 2rem 2rem;
+	width: 40%;
+	background-color: var(--violeta-muito-escuro);
+	color: var(--branco);
+	padding: 1rem;
+	border-radius: 10px;
+	border: none;
+	font-size: 18px;
+}
+.mensagem__obrigado{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	right: 0;
+	bottom: 0;
+	background-color: var(--branco);
+	width: 50vw;
+	
+
+}
+
+.mensagem__obrigado-img{
+	margin-left: 19rem;
+	margin-top: 10rem;
+
+
+}
+.mensagem__obrigado-button{
+	margin-top: 3rem;
+	margin-left: 9rem;
+	width: 60%;
+	background-color: var(--violeta-muito-escuro);
+	color: var(--branco);
+	padding: 1rem;
+	border-radius: 10px;
+	border: none;
+	font-size: 18px;
+}
+
+.mensagem__obrigado-button:hover{
+	cursor: pointer;
+}
+
+.mensagem__obrigado-button:hover{
+	c
+}
+
+.mensagem__obrigado-thank{
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--violeta-muito-escuro);
+	margin: 3rem 0;
+	font-size: 28px;
+}
+.mensagem__obrigado-texto{
+	text-align: center;
+	color: var(--violeta-acinzentado-escuro);
+	
+	
+}
+
+.mensagem__erro{
+	font-size: 10px;
+	color: var(--vermelho);
+	display: none;
+}
+
+.mensagem__branco {
+	font-size: 10px;
+	color: var(--vermelho);
+	display: none;
+}
+
+.cvc__container{
+	float: right;
+	margin-top: -2.5rem;
+	margin-right: 12rem;
+}
+
+}
+
+@media screen and (min-width: 1440px) {
+   
+section.card{
+	overflow: hidden;
+	height: 100vh;
+}
+
+body{
+	background: url("images/bg-main-desktop.png");
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+
+}
+
+.card__mobile{
+	display: none;
+}
+
+.container-card__back{
+	position: relative;
+}
+.card__back{
+	top: 28rem;
+	left: 15rem;
+	position: absolute;
+}
+.card__back--img{
+	width: 100%;
+	
+}
+.card__back--texto{
+	top: 35rem;
+	left:38rem;
+	position: absolute;
+
+} 
+
+.container-card__front{
+	position: relative;
+}
+.card__front{
+	top: 10rem;
+	left: 10rem;
+	position: absolute;
+}
+
+.card__front--img{
+	width: 100%;
+	
+}
+
+.card__front--logo{
+	left: 12rem;
+	top: 12rem;
+	position: absolute;
+}
+
+.card__front--logo--logo{
+
+	width: 100%;
+}
+
+.card__front--numero{
+	top: 20rem;
+	left: 12rem;
+	position: absolute;
+}
+
+.card__front--numero--num{
+	color: var(--branco);
+	letter-spacing: .1rem;
+	font-size: 22px;
+}
+
+.card__front--texto{
+	display: flex;
+	top: 23rem;
+	left: 12rem;
+	position: absolute;
+	justify-content: space-between;
+	width: 25%;
+
+}
+
+.card__front--nome,
+.card__front--validade-mes,
+.card__front--validade-ano,
+.card__front--validade-barra {
+	font-size: 10px;
+	color: var(--branco);
+	text-transform: uppercase;
+
+}
+
+.card__front--validade-mes{
+	margin-left: 15rem;
+}
+
+
+.form{
+float: right;
+margin-top: -50rem;
+margin-left: 50rem;
+
+}
+
+..mensagem__obrigado{
+	display: none;
+	position:fixed;
+	top:50%;
+	height: 100%;
+	background-color: var(--branco);
+	width: 50%;
+	
+
+}
+
+.enviar{
+	margin: 2rem 1rem;
+	width: 85%;
+	background-color: var(--violeta-muito-escuro);
+	color: var(--branco);
+	padding: 1rem;
+	border-radius: 10px;
+	border: none;
+	font-size: 18px;
+}
+
+.enviar:hover{
+	cursor: pointer;
+}
+
+.mensagem__obrigado-button{
+	margin: 2rem 2rem;
+	width: 50%;
+	background-color: var(--violeta-muito-escuro);
+	color: var(--branco);
+	padding: 1rem;
+	border-radius: 10px;
+	border: none;
+	font-size: 18px;
+}
+.mensagem__obrigado{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	right: 0;
+	bottom: 0;
+	background-color: var(--branco);
+	width: 50vw;
+	
+
+}
+
+.mensagem__obrigado-img{
+	margin-left: 20rem;
+	margin-top: 15rem;
+
+
+}
+.mensagem__obrigado-button{
+	margin-top: 3rem;
+	margin-left: 9rem;
+	width: 60%;
+	background-color: var(--violeta-muito-escuro);
+	color: var(--branco);
+	padding: 1rem;
+	border-radius: 10px;
+	border: none;
+	font-size: 18px;
+}
+
+.mensagem__obrigado-button:hover{
+	cursor: pointer;
+}
+
+.mensagem__obrigado-button:hover{
+	c
+}
+
+.mensagem__obrigado-thank{
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--violeta-muito-escuro);
+	margin: 3rem 0;
+	font-size: 28px;
+}
+.mensagem__obrigado-texto{
+	text-align: center;
+	color: var(--violeta-acinzentado-escuro);
+	
+	
+}
+
+.mensagem__erro{
+	font-size: 10px;
+	color: var(--vermelho);
+	display: none;
+}
+
+.mensagem__branco {
+	font-size: 10px;
+	color: var(--vermelho);
+	display: none;
+}
+}
+
