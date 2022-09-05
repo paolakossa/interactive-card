@@ -75,6 +75,7 @@ section.card{
 .card__front--numero--num{
 	color: var(--branco);
 	letter-spacing: .1rem;
+	text-decoration: none;
 }
 
 .card__front--texto{
