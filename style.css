@@ -238,7 +238,11 @@ section.mensagem__obrigado{
 	display: none;
 }
 
-.mensagem__branco {
+.mensagem__branco-1,
+.mensagem__branco-2,
+.mensagem__branco-3,
+.mensagem__branco-4
+ {
 	font-size: 10px;
 	color: var(--vermelho);
 	display: none;
@@ -460,7 +464,10 @@ margin-left: 50rem;
 	display: none;
 }
 
-.mensagem__branco {
+.mensagem__branco-1,
+.mensagem__branco-2,
+.mensagem__branco-3,
+.mensagem__branco-4 {
 	font-size: 10px;
 	color: var(--vermelho);
 	display: none;
@@ -676,7 +683,10 @@ margin-left: 50rem;
 	display: none;
 }
 
-.mensagem__branco {
+.mensagem__branco-1,
+.mensagem__branco-2,
+.mensagem__branco-3,
+.mensagem__branco-4 {
 	font-size: 10px;
 	color: var(--vermelho);
 	display: none;
